@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'Garet';
+    src: url('font/garret/Garet-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Garet-Bold';
+    src: url('font/garret/Garet-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'maragasa';
+    src: url('font/maragasa/Maragsa-Display.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family:"Garet";
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#fffcf5;
+    display: flex;
+    flex-direction: column;
+}
+#page-01,#page-02,#page-03, #page-04{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#page-02, #page-03, #page-04{
+    margin-top: 7vw;
+}
+#page-01 #texts{
+    align-self: center;
+    width: 50%;
+}
+#page-01 #title-small{
+    font-family: "Garet-Bold";
+    text-align: start;
+}
+#page-01 #texts h1{
+    font-family:"maragasa";
+    color:#fa573e;
+    font-size: 10vw;
+    text-align: center;
+}
+#title-textlist{
+    text-align: end;
+}
+#title-textlist hr{
+    width: 15vw;
+    height: .1vw;
+    color: black;
+    margin-left: auto;
+}
+#page-01 #imagecontainer{
+    background-image:url("https://images.pexels.com/photos/7760026/pexels-photo-7760026.jpeg");
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width: 40%;
+    height: 90%;
+    margin-left: 5vh;
+}
+
+/* ------------- Página 2 -------------*/
+
+#page-02{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+#page-02 #text{
+    display: flex;
+    flex-direction: column;
+    gap:30%;
+    width: 50%;
+}
+#page-02 #text h3{
+    font-family: "Garet-Bold";
+}
+#page-02 #text h1{
+    font-family: "maragasa";
+    font-size:3.3vw;
+    color:#fa573e
+}
+#page-02 #image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 4vh;
+}
+
+#page-02 #image-container #image-two{
+    background-image: url("https://m.media-amazon.com/images/S/aplus-media-library-service-media/04905a24-926c-451d-96c7-455867af2a5c.__CR0,0,362,453_PT0_SX362_V1___.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vh;
+    height: 50vh;
+    min-height: 50vh;
+    min-width: 30vh;
+}
+#page-02 #image-container #image-one{
+    background-image: url("https://images.pexels.com/photos/7760016/pexels-photo-7760016.jpeg");
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width: 50vh;
+    height: 70vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    min-height: 50vh;
+    min-width: 20vh;
+}
+
+/* ------------- Página 3 -------------*/
+
+#page-03 #image-left{
+    background-image: url("media/pexels-cottonbro-7760003.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+    width: 60vw;
+}
+#image-right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:10vw;
+}
+#image-right-container #image{
+    background-image: url("https://images.pexels.com/videos/7760072/pexels-photo-7760072.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vw;
+    width: 20vw
+}
+#image-right-container h1{
+    text-align: center;
+    color:#fa573e;
+    font-family: "maragasa";
+    font-size: 3vw;
+    width: 15vw;
+}
+#image-right-container #text-top{
+    transform: translateY(3.5vw);
+}
+#image-right-container #text-bottom{
+    transform: translateY(-3.5vw);
+}
+
+/* ------------- Página 4 -------------*/
+
+#page-04 #image{
+    background-image: url("https://images.pexels.com/photos/7760020/pexels-photo-7760020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30vw;
+    height: 40vw;
+    margin-left: auto;
+    margin-right: 5vw;
+}
+#page-04 #text-container{
+    margin-left: 5vw;
+}
+
+#text-container h1{
+    font-family: "maragasa";
+    color:#fa573e;
+    font-size: 7vw;
+    width: 50%;
+}
+.text-table-p h1{
+    font-family: "Garet-Bold";
+}
+
+footer{
+    height: 15vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h1{
+    font-size: 5vw;
+    font-family: "maragasa";
+    transition: 500ms ease;
+}
+footer h1:hover{
+    color:white;
+}
+footer a{
+    text-decoration: none;
+}
